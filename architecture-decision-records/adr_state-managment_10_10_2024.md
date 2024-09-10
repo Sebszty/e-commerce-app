@@ -11,27 +11,27 @@
 * **Argument**: The Context API is used to hold state that occurs globally, so the shopping cart is an ideal example. On the other hand, products and categories can exist in larger quantities and change dynamically, hence Zustand was chosen. Additionally, Zustand provides greater capabilities in state management.
 
 * **Implications**: 
-     1/ Cart:
+     # 1/ Cart:
      - Using Context API will provide easy access to cart state throughout the application.
      - May require additional optimization with a large number of renderings.
 
-     2/ Products and categories:
+     # 2/ Products and categories:
      - Zustand will provide efficient state management for potentially large amounts of data.
      - Easier management of complex state updates.
 
-     3/ Future scaling:
+     # 3/ Future scaling:
      - As the application grows, it may be necessary to move state logic to the server.
      - Performance should be monitored, especially for the cart stored in Context API.
 
 * **Related principles**:
-     1/ Redux: Rejected due to greater configuration complexity compared to Zustand.
-     2/ MobX: Considered, but Zustand was chosen due to simpler implementation and smaller size.
-     3/ Storing all state in Context API: Rejected due to potential performance issues with large amounts of data.
+     # 1/ Redux: Rejected due to greater configuration complexity compared to Zustand.
+     # 2/ MobX: Considered, but Zustand was chosen due to simpler implementation and smaller size.
+     # 3/ Storing all state in Context API: Rejected due to potential performance issues with large amounts of data.
 
 * **References**:
-     1/ React Context API Documentation
-     2/ Zustand GitHub Repository
-     3/ Comparison of State Management Solutions in React
+     # 1/ React Context API Documentation
+     # 2/ Zustand GitHub Repository
+     # 3/ Comparison of State Management Solutions in React
 
 * **Related principles**: -.
 
